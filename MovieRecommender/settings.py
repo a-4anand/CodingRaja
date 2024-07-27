@@ -97,4 +97,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CSRF settings for production
-CSRF_TRUSTED_ORIGINS = ['htps://netflixmovierecommendation.azurewebsites.net','https://netflixmovierecommendation.azurewebsites.net/search/']
+CSRF_TRUSTED_ORIGINS = ['https://netflixmovierecommendation.azurewebsites.net','https://netflixmovierecommendation.azurewebsites.net/search/']
