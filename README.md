@@ -5,6 +5,9 @@ Anand Dubey
 
 ## Description
 This project is a self-initiated data science endeavor focused on building a movie recommendation system. The application utilizes collaborative filtering to suggest movies based on user ratings. Given the massive size of the ratings dataset (over 10 million rows), handling and analyzing this data required converting the data format from CSV to Parquet for enhanced performance and efficiency.
+![image](https://github.com/user-attachments/assets/37bbeb55-2354-4e53-90ba-87983011840b)
+![image](https://github.com/user-attachments/assets/771bdc8a-c9a8-4d5b-8726-7650ca7fe3c4)
+
 
 ## Key Features
 - **Collaborative Filtering**: Provides personalized movie recommendations based on user ratings.
