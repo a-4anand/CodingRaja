@@ -51,9 +51,4 @@ This project is a self-initiated data science endeavor focused on building a mov
 - **Advanced Filtering**: Develop more sophisticated filtering techniques to refine recommendations further.
 - **User Interface**: Enhance the user interface for a better overall experience.
 
-## Installation and Usage
-To run the Movie Recommendation Web App, follow these steps:
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/a-4anand/CodingRaja.git
