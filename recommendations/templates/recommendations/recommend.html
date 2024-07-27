@@ -9,25 +9,20 @@
         html, body {
             height: 100%;
             margin: 0;
-            font-family: Arial, sans-serif; /* Optional: for better readability */
+            font-family: Arial, sans-serif;
         }
 
         .background {
-            /* Full viewport size */
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            /* Background image */
-            background-image: url("{% static 'images/bg.jpg' %}");
+            background-image: url("https://wallpapercave.com/wp/wp1917128.jpg");
             background-size: cover;
             background-position: center;
-            /* Blur effect */
             filter: blur(4px);
-            /* Ensures the image covers the area */
             object-fit: cover;
-            /* Make sure the content is on top */
             z-index: -1;
         }
 
@@ -36,9 +31,9 @@
             position: relative;
             z-index: 1;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background to make text readable */
-            border-radius: 8px; /* Optional: Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow for better visual effect */
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
@@ -48,16 +43,16 @@
 
         .list-group-item {
             border: none;
-            border-radius: 5px; /* Optional: Rounded corners for list items */
+            border-radius: 5px;
         }
 
         .btn-link {
-            color: #007bff; /* Adjust button color as needed */
-            font-weight: bold; /* Make button text bold */
+            color: #007bff;
+            font-weight: bold;
         }
 
         .btn-link:hover {
-            text-decoration: underline; /* Optional: Underline on hover */
+            text-decoration: underline;
         }
     </style>
 
@@ -74,11 +69,17 @@
                 {% for movie in recommendations.itertuples %}
                     <li class="list-group-item">
                         <strong>{{ movie.Name }}</strong> ({{ movie.Year }})
-                        <!-- Optional: Display movie details or links -->
                     </li>
                 {% endfor %}
             </ul>
         {% endif %}
+
+        <!-- Example form with CSRF token -->
+        <form method="post" action="/your-endpoint/">
+            {% csrf_token %}
+            <!-- Add your form fields here -->
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

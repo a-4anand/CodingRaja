@@ -20,7 +20,7 @@
             width: 100%;
             height: 100%;
             /* Background image */
-            background-image: url("{% static 'images/bg.jpg' %}");
+            background-image: url("https://wallpapercave.com/wp/wp1917128.jpg");
             background-size: cover;
             background-position: center;
             /* Blur effect */
@@ -75,6 +75,7 @@
                     <li class="list-group-item">
                         <strong>{{ movie.Name }}</strong> ({{ movie.Year }})
                         <form method="get" action="{% url 'recommend_movies' movie.Movie_ID %}">
+                            {% csrf_token %}
                             <button type="submit" class="btn btn-link">Get Recommendations</button>
                         </form>
                     </li>
